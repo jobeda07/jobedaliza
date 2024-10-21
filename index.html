@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Title -->
+  <title>Jobeda</title>
+  <!-- Meta Tag -->
+  <meta charset="UTF-8">
+  <meta name="description" content="laravel Developer">
+  <meta name="keywords" content="Laravel,PHP,REST Api,Vuejs,Bootstrap,Taliwand CSS , CSS, JavaScript">
+  <meta name="author" content="Jobeda Liza">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon -->
+  <link rel="icon" href="">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!--aos animation-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!--fancybox css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+  <!-- Bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!--hover effect css-->
+  <link rel="stylesheet" href="assets/css/hovereffects.css">
+  <!--progress Bar-->
+  <link rel="stylesheet" href="assets/css/jquery.lineProgressbar.css">
+  <!-- responsive stylesheet -->
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+  <div class="loader-wrapper">
+    <div class="loader">
+    </div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+
+  <!--nav start-->
+  <nav class="navbar navbar-expand-lg  ">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <h1 class="display-5 fw-semibold text-white">Jobeda</h1>
+      </a> <!--Navbar brand-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <!-- <i class="fa-solid fa-bars"></i> -->
+        </span>
+      </button> <!--toggole-->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarScroll">
+        <!-- Nav Menu start-->
+        <ul class="navbar-nav   navbar-nav-scroll">
+          <li class="nav-item  ">
+            <a class="nav-link text-uppercase mx-2 mt-3 effect slide-up" aria-current="page" href="index.html"
+              data-effect="Home">
+              Home
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link px-2 text-uppercase mx-2 mt-3 effect slide-up " href="#about" data-effect="About">
+              About
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link px-2 text-uppercase mx-2 mt-3 effect slide-up " href="#skills" data-effect="Skills">
+              Skills
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link px-2 text-uppercase mx-2 mt-3 effect slide-up " href="#portfolio"
+              data-effect="Portfolio">
+              Portfolio
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link px-2 text-uppercase mx-2 mt-3 effect slide-up " href="#service" data-effect="Service">
+              Services
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link px-2 text-uppercase mx-2 mt-3 effect slide-up " href="#contact" data-effect="Contact">
+              Contact
+            </a>
+          </li>
+        </ul>
+        <!--nav menu end-->
+      </div>
+    </div>
+  </nav>
+  <!--nav end -->
+
+
+  <!-- header start-->
+  <header class="container-fluid">
+    <div class="container py-5 ">
+      <div class="py-4">
+        <div class="row ">
+          <div class="offset-md-2 col-md-8 text-center header-content">
+            <h2 class="text-white display-5 fw-bold ">
+              <span class="">Jobeda k</span>
+              <span class="">Liza</span>
+            </h2>
+            <P class="animate-typing text-white display-5 fw-bold" data-animate-loop="true" data-type-speed="300"
+              data-type-delay="200" data-remove-speed="50" data-remove-delay="500" data-cursor-speed="200">
+              Web Designer|
+              Web Developer|
+              Api Spacilist|
+            </P>
+            <p class="text-white fs-5 ">Sed ut perspiciatis unde omnis iste natus error sit
+              voluptatem accusantium doloremque laudantium.</p>
+            <ul class="list-unstyled d-flex justify-content-center align-item-center my-4">
+              <li>
+                <a href="javascript:void(0)" class="icon mx-2">
+                  <i class="fa-brands fa-facebook  "></i>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="icon mx-2"> <i class="fa-brands fa-twitter "></i> </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="icon mx-2"> <i class="fa-solid fa-envelope  "></i> </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="icon mx-2"> <i class="fa-brands fa-instagram "></i></a>
+              </li>
+            </ul> <!-- header Icon -->
+            <a class="btn fw-semibold mt-3 text-white read-more effect box-fill-skew" href="#about"
+              data-effect="Read More">
+              <span>Read More</span>
+            </a>
+          </div>
+        </div>
+        <div class="scroll text-center">
+          <a id="scroll-btn" href="#about"></a> <!-- scroll Btn -->
+        </div>
+      </div>
+    </div>
+
+  </header>
+  <!--header end-->
+
+
+  <!--About section start-->
+  <section class="container-fluid py-5  about-section" id="about">
+    <div class="container my-3">
+      <div class="row">
+        <div class="col-xl-12">
+          <h3 class="text-center fs-2 fw-bold text-uppercase section-header" data-aos="zoom-in">About Me</h3>
+          <!--About header-->
+        </div>
+      </div>
+      <div class="row  ">
+        <div class="col-md-7 ps-5  fw-semibold-detail">
+          <h2 class="about  mb-3" data-aos="fade-right">I'm Jobeda Khatun Liza</h2>
+          <P class="about-me fs-5" data-aos="fade-right">A Lead <span class="fs-4 fw-bold">
+              Web Developer</span> based in <span class="fs-4 fw-bold">Laravel</span>.</P>
+          <p class="small-text" style="color:white !important" data-aos="fade-right">With a strong commitment to web development and a genuine
+            enthusiasm for creating innovative solutions, I have spent 2 years honing my skills in building dynamic and
+            responsive websites. My expertise lies in PHP, Laravel, REST API development, MySQL, AJAX, jQuery,
+            JavaScript, and Vue.js. I focus on delivering efficient web applications that offer seamless user
+            experiences. Whether working on small personal projects or large-scale applications, I approach each task
+            with meticulous attention to detail and a drive to exceed expectations.</p> <!--about Me content-->
+          <div class="row mt-4 info">
+
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <h4>Experience :</h4>
+                <div class="services__item">
+                  <h4>Laravel Developer</h4>
+                  <p>Classic It (Oct, 2023-present)</p>
+                  <p class="mt-2"><i class="fa fa-circle" style="font-size: 8px"></i> As a Laravel developer, I created
+                    robust and scalable web solutions that significantly improved business operations.</p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+              <h4>Education :</h4>
+                <div class="services__item">
+                  <h4>Northern Univercity Bangladesh</h4>
+                  <p>Computer Science & Engineering</p>
+                  <p>Cgpa:3.49</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="services__item">
+                  <h4>Laravel Developer</h4>
+                  <p>Codecell Limited (march, 2023- sep,2023)</p>
+                  <p class="mt-2"><i class="fa fa-circle" style="font-size: 8px"></i> Developed high-performance web
+                    applications focusing on clean code and efficient functionality.</p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="services__item">
+                  <h4>Comilla Ploytechnic Institute</h4>
+                  <p>Diploma in Computer Science</p>
+                  <p>Cgpa:3.85</p>
+                </div>
+              </div>
+            </div>
+
+          </div> <!--about details-->
+          <div class="row mt-4">
+            <div class="col-md-12 about-icon">
+              <ul class="d-flex list-unstyled " data-aos="fade-right">
+                <li>
+                  <a href="javascript:void(0)"><i class="fa-solid fa-envelope p-2 mx-2 "></i></a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)"><i class="fa-solid fa-phone p-2 mx-2"></i></a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)"><i class="fa-brands fa-skype p-2 mx-2"></i></a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)"><i class="fa-brands fa-squarespace p-2 mx-2"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div> <!--about section content-->
+        <div class="col-md-5 about-image text-center">
+          <div class="">
+            <img src="Photos/about me.png" alt="About John" title="John Smith" class="img-fluid" data-aos="flip-left"
+              data-aos-easing="ease-out-cubic" data-aos-duration="2000"> <!--about Section Image-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--About section end-->
+
+
+  <!--skills section start-->
+  <div class="container-fluid skill-section" id="skills">
+    <div class="container py-5  skill">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3 class="text-center fs-2 fw-bold text-uppercase section-header" data-aos="zoom-in">My Featured Skills</h3>
+          <!--skill Header-->
+        </div>
+      </div>
+      <div class="row skills pt-3 mt-3">
+        <div class="col-lg-5 skill-img project">
+          <div class="project__card">
+            <img src="Photos/skill.webp" alt="Skills" title="Skills" class="img-fluid " data-aos="flip-up">
+            <!--skill Image-->
+          </div>
+        </div>
+        <div class="col-lg-7 my-3 ">
+          <div class="">
+            <div class="mx-4">
+              <h2 class="about-skill  mt-lg-auto mb-3 fw-semibold" data-aos="fade-left">My Skills</h2>
+              <!-- <p class=" special " data-aos="fade-left">I Specialize in Branding and Strategy, and am passionate about
+                creating Awesome Portfolio work. And I always ready to impress the audience with my Creativity.</p> -->
+            </div>
+            <div class="mx-4 my-3 " data-aos="fade-left">
+              <p class="skill-name fw-semibold">Laravel</p>
+              <div class="progress">
+                <div class="progress-bar bg-success " style="width:85%">85%</div>
+              </div>
+            </div>
+            <div class="mx-4 my-3" data-aos="fade-left">
+              <p class="skill-name fw-semibold">PHP</p>
+              <div class="progress">
+                <div class="progress-bar bg-success" style="width:70%">70%</div>
+              </div>
+            </div>
+            <div class="mx-4 mt-3" data-aos="fade-left">
+              <p class="skill-name fw-semibold">REST Api</p>
+              <div class="progress">
+                <div class="progress-bar bg-success" style="width:85%">85%</div>
+              </div>
+            </div> 
+            <div class="mx-4 mt-3" data-aos="fade-left">
+              <p class="skill-name fw-semibold">Vue js</p>
+              <div class="progress">
+                <div class="progress-bar bg-success" style="width:55%">55%</div>
+              </div>
+            </div>
+            <div class="mx-4 my-3" data-aos="fade-left">
+              <p class="skill-name fw-semibold">Javascript</p>
+              <div class="progress">
+                <div class="progress-bar bg-success" style="width:70%">70%</div>
+              </div>
+            </div>
+            <div class="mx-4 my-3" data-aos="fade-left">
+              <p class="skill-name fw-semibold">Bootstrap</p>
+              <div class="progress">
+                <div class="progress-bar bg-success" style="width:90%">90%</div>
+              </div>
+            </div>
+            <div class="mx-4 my-3" data-aos="fade-left">
+              <p class="skill-name fw-semibold">Taliwand CSS</p>
+              <div class="progress">
+                <div class="progress-bar bg-success" style="width:80%">80%</div>
+              </div>
+            </div><!-- Skill Progress bar-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--skills section end-->
+
+
+  <!--portfolio section start-->
+  <div class="container py-5 portfolio" id="portfolio">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="text-center fs-2 fw-bold text-uppercase section-header">
+          PORTFOLIO
+        </h3> <!--Portfolio Header-->
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 mt-4 mb-4">
+        <ul class="nav justify-content-center">
+          <li class="nav-item filter" data-filter="all">
+            <a class="nav-link fw-semibold portfolio-nav " href="javascript:void(0)">All</a>
+          </li>
+          <li class="nav-item filter" data-filter=".web">
+            <a class="nav-link fw-semibold portfolio-nav" href="javascript:void(0)">Web Development</a>
+          </li>
+          <li class="nav-item filter" data-filter=".app">
+            <a class="nav-link fw-semibold portfolio-nav" href="javascript:void(0)">Api Project</a>
+          </li>
+          <li class="nav-item filter" data-filter=".app">
+            <a class="nav-link fw-semibold portfolio-nav" href="javascript:void(0)">VueJs Project</a>
+          </li>
+          <li class="nav-item filter" data-filter=".development">
+            <a class="nav-link fw-semibold portfolio-nav" href="javascript:void(0)"></a>
+          </li>
+        </ul>
+      </div>
+    </div> <!--Portfolio Nav-->
+    <div class="row  gy-4" id="grid"> <!--Portfolio Gallery Start-->
+      <div class="col-md-4 mix app development project" data-custom-order="app" data-fancybox="group">
+        <div class="gallery__item project__card">
+          <a href="photos/blog2.jpg " class="gallery project__image">
+            <img src="photos/blog2.jpg" alt="Portfolio Image" title="Portfolio" class="img-fluid" data-aos="flip-down">
+          </a>
+          <div class="project__detail">
+            <div class="project-bg">
+              <p class="project__title"><a href="#" class="text-decoration-none">Application</a></p>
+              <small class="project__category "><a href="#" class="text-decoration-none">Development</a></small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mix web app project" data-custom-order="web" data-fancybox="group">
+        <div class="gallery__item project__card">
+          <a href="photos/blog3.jpg " class="gallery project__image">
+            <img src="photos/blog3.jpg" alt="Portfolio Image" title="Portfolio" class="img-fluid"
+              data-aos="zoom-in-left">
+          </a>
+          <div class="project__detail">
+            <div class="project-bg">
+              <p class="project__title"><a href="#" class="text-decoration-none">Web Design</a></p>
+              <small class="project__category"><a href="#" class="text-decoration-none">Application</a></small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mix development app project" data-custom-order=" development" data-fancybox="group">
+        <div class="gallery__item project__card">
+          <a href="photos/blog4.jpg " class="gallery project__image">
+            <img src="photos/blog4.jpg" alt="Portfolio Image" title="Portfolio" class="img-fluid" data-aos="fade-right">
+          </a>
+          <div class="project__detail">
+            <div class="project-bg">
+              <h2 class="project__title"><a href="#" class="text-decoration-none">Development</a></h2>
+              <small class="project__category"><a href="#" class="text-decoration-none">Application</a></small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mix dev web  project" data-custom-order="web" data-fancybox="group">
+        <div class="gallery__item project__card">
+          <a href="photos/blog5.jpg " class="gallery project__image">
+            <img src="photos/blog5.jpg" alt="Portfolio Image" title="Portfolio" class="img-fluid" data-aos="flip-up">
+          </a>
+          <div class="project__detail">
+            <div class="project-bg">
+              <p class="project__title"><a href="#" class="text-decoration-none my-auto">Development</a></p>
+              <small class="project__category"><a href="#" class="text-decoration-none">Web Design</a></small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mix development web project" data-custom-order="app" data-fancybox="group">
+        <div class="gallery__item project__card">
+          <a href="photos/blog1.jpg " class="gallery project__image">
+            <img src="photos/blog1.jpg" alt="Portfolio Image" title="Portfolio" class="img-fluid" data-aos="fade-left">
+          </a>
+          <div class="project__detail">
+            <div class="project-bg">
+              <p class="project__title"><a href="#" class="text-decoration-none">Web Design</a></p>
+              <small class="project__category"><a href="#" class="text-decoration-none">Development</a></small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mix web app project" data-custom-order="app" data-fancybox="group">
+        <div class="gallery__item project__card">
+          <a href="photos/blog6.jpg " class="gallery project__image ">
+            <img src="photos/blog6.jpg " alt="Portfolio Image" title="Portfolio" class="img-fluid" data-aos="fade-left">
+          </a>
+          <div class="project__detail">
+            <div class="project-bg">
+              <p class="project__title"><a href="#" class="text-decoration-none">Web Design</a></p>
+              <small class="project__category"><a href="#" class="text-decoration-none">Application</a></small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!--portfolio Gallery End-->
+  </div>
+  <!--portfolio section end-->
+
+
+  <!--service start-->
+  <div class="container-fluid about-work py-5" id="service">
+    <div class="container my-3">
+      <div class="row my-3">
+        <div class="col-xl-12">
+          <h3 class="text-center fs-2 fw-bold text-uppercase section-header" data-aos="zoom-in">What I Do For You</h3>
+        </div> <!-- Service Header-->
+      </div>
+      <div class="row">
+        <div class="col-md-4  my-2 project" data-aos="flip-down">
+          <div class=" text-center about-content py-3 px-2 project__card">
+            <i class="fa-solid fa-gear fs-2 mt-2"></i>
+            <h4 class="fs-4 fw-semibold my-3">Web Development</h4>
+            <p class="my-3 small-text">High-quality web development, specializing in SaaS, POS systems, and custom applications to drive your business forward</p>
+
+          </div>
+        </div>
+        <div class="col-md-4 my-2 project" data-aos="zoom-in-left">
+          <div class=" text-center about-content py-3 px-2 project__card">
+            <i class="fa-solid fa-mobile fs-2 mt-2"></i>
+            <h4 class="fs-4 fw-semibold my-3">API Development</h4>
+            <p class="my-3 small-text">Secure and scalable REST API solutions, from design to deployment, ensuring seamless integration and communication between applications.</p>
+          </div>
+        </div>
+        <div class="col-md-4  my-2 project" data-aos="fade-right">
+          <div class=" text-center  about-content py-3 px-2 project__card">
+            <i class="fa-solid fa-laptop fs-2 mt-2"></i>
+            <h4 class="fs-4 fw-semibold my-3">Vuejs Development</h4>
+            <p class="my-3 small-text">Crafting fast, responsive Vue.js websites with engaging UIs and robust API development to enhance your online presence and optimize user interaction.</p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="row ">
+        <div class="col-md-4  my-2 project" data-aos="flip-up">
+          <div class=" text-center about-content py-3 px-2 project__card">
+            <i class="fa-solid fa-gear fs-2 mt-2"></i>
+            <h4 class="fs-4 fw-semibold my-3">Seo Marketing</h4>
+            <p class="my-3 small-text">Lorem ipsum dolor sit amet adipisicing elit. Ratione, provident esse ducimus sunt
+              quam similique?</p>
+
+          </div>
+        </div>
+      </div> service Details -->
+    </div>
+  </div>
+  <!--service end-->
+
+
+  <!--coundown section start-->
+  <div class="container py-md-5 coundown">
+    <div class="row my-4 ">
+      <div class="col-md-3">
+        <div class=" text-center" id="counters_1">
+          <h3 class="display-4 fw-semibold counter" data-TargetNum="30">0</h3>
+          <p class="fw-semibold project-p">Finished Projects</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class=" text-center" id="counters_1">
+          <h3 class="display-4 fw-semibold counter" data-TargetNum="2500">0</h3>
+          <p class="fw-semibold project-p">Working Hours</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class=" text-center" id="counters_1">
+          <h3 class="display-4 fw-semibold counter" data-TargetNum="1280">0</h3>
+          <p class="fw-semibold project-p">Online Support</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class=" text-center" id="counters_1">
+          <h3 class="display-4 fw-semibold counter" data-TargetNum="320">0</h3>
+          <p class="fw-semibold project-p">Happy Customers</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--coundown section end-->
+
+
+  <!--contact section start-->
+  <div class="container-fluid contact-section py-sm-5 " id="contact">
+    <div class="container py-3">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="text-center fs-2 fw-bold text-uppercase section-header" data-aos="zoom-in">
+            TALK TO ME!
+          </h3> <!--contact Header-->
+        </div>
+        <div class=" offset-md-3 col-md-6 text-center">
+          <p class="my-2 small-text">Got any questions? Don't hesitate to get in touch.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="d-flex form-section">
+            <div class="row mt-5">
+              <form> <!-- Contact form Start -->
+                <div class="row d-flex name-number">
+                  <div class="input-group" data-aos="zoom-in">
+                    <input type="text" id="name " requred>
+                    <label for="name"><i class="fa-solid fa-user mx-2"></i>Your Name</label>
+                  </div>
+                  <div class="input-group" data-aos="zoom-in">
+                    <input type="text" id="number" requred>
+                    <label for="number"><i class="fa-solid fa-phone mx-2"></i>Phone No.</label>
+                  </div>
+                </div>
+                <div class="input-group mt-2" data-aos="zoom-in">
+                  <input type="email" id="email" requred>
+                  <label for="email"><i class="fa-solid fa-envelope me-2"></i>Email Id</label>
+                </div>
+                <div class="input-group" data-aos="zoom-in">
+                  <textarea name="" id="massage" cols="" rows="6" required
+                    placeholder="Type your message here..."></textarea>
+                  <label for="massage"></label>
+                </div>
+                <button type="submit" class="submit-btn" data-aos="zoom-in">SUBMIT<i
+                    class="fa-solid fa-paper-plane ms-2"></i></button>
+              </form> <!--contact form end-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--contact section end-->
+
+  <!--footer start-->
+  <div class="container-fluid footer-section">
+    <div class="container pt-4">
+      <div class="row ">
+        <!-- <div class="col-md-12 text-center">
+          <h2 class="text-white fw-semibold fs-2">Jobeda k Liza</h2>
+        </div> -->
+      </div>
+      <!-- <div class="row">
+        <div class="offset-md-2 col-md-8">
+          <div class="row my-2">
+            <div class="col-md-12">
+              <ul class="list-unstyled d-flex justify-content-center align-item-center">
+                <li><a href="javascript:void(0)">
+                    <i class="fa-solid fa-phone mx-2 p-2  "></i>
+                  </a></li>
+                <li><a href="javascript:void(0)">
+                    <i class="fa-solid fa-envelope mx-2 p-2 "></i>
+                  </a></li>
+                <li><a href="javascript:void(0)">
+                    <i class="fa-brands fa-linkedin mx-2 p-2  "></i>
+                  </a></li>
+                <li><a href="javascript:void(0)">
+                    <i class="fa-brands fa-twitter mx-2 p-2 "></i>
+                  </a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div class="row lg-2">
+        <div class="col-md-6 text-center">
+          <p class="text-white">@ <a href="index.html" class="text-decoration-none john fw-semibold">Jobeda</a> | All
+            Right Reserved.</p>
+        </div>
+        <div class="col-md-6">
+          <div class="offset-md-2 col-md-8">
+            <div class="row my-2">
+              <div class="col-md-12">
+                <ul class="list-unstyled d-flex justify-content-center align-item-center">
+                  <li><a href="javascript:void(0)">
+                      <i class="fa-solid fa-phone mx-2 p-2  "></i>
+                    </a></li>
+                  <li><a href="javascript:void(0)">
+                      <i class="fa-solid fa-envelope mx-2 p-2 "></i>
+                    </a></li>
+                  <li><a href="javascript:void(0)">
+                      <i class="fa-brands fa-linkedin mx-2 p-2  "></i>
+                    </a></li>
+                  <li><a href="javascript:void(0)">
+                      <i class="fa-brands fa-twitter mx-2 p-2 "></i>
+                    </a> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--footer end-->
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class="fa-solid fa-arrow-turn-up"></i>
+  </button>
+
+
+  <!-- jquery js -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!--popper js-->
+  <script src="assets/js/popper.min.js"></script>
+  <!--bootstrap js-->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <!--animate Typing js-->
+  <script src="assets/js/animateTyping.js"></script>
+  <!--aos animation-->
+  <script src="assets/js/aos.js"></script>
+  <!--mixitup js-->
+  <script src="assets/js/MixItUp_jquery.mixitup.min.js"></script>
+  <!--counter js-->
+  <script src="assets/js/multi-animated-counter.js"></script>
+  <!--fancybox js-->
+  <script src="assets/js/fancybox.min.js"></script>
+  <!--hover3d js-->
+  <script src="assets/js/jquery.hover3d.js"></script>
+  <!--tilt js-->
+  <script src="assets/js/tilt.jquery.min.js"></script>
+  <!--my js -->
+  <script src="assets/js/script.js"></script>
+
+  <script>
+    // For Live Projects
+    window.addEventListener('load', function () {
+      document.querySelector('body').classList.add("loaded")
+    });
+
+  </script>
+
+</body>
+
+</html>
